@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2020-12-14 Mon 14:09 -->
+<!-- 2023-01-06 Fri 11:31 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Zhengyang Liu's Homepage</title>
@@ -39,7 +39,7 @@
   }
   pre.src {
     position: relative;
-    overflow: visible;
+    overflow: auto;
     padding-top: 1.2em;
   }
   pre.src:before {
@@ -51,7 +51,7 @@
     padding: 3px;
     border: 1px solid black;
   }
-  pre.src:hover:before { display: inline;}
+  pre.src:hover:before { display: inline; margin-top: 14px;}
   /* Languages per Org manual */
   pre.src-asymptote:before { content: 'Asymptote'; }
   pre.src-awk:before { content: 'Awk'; }
@@ -160,6 +160,19 @@
   .footdef  { margin-bottom: 1em; }
   .figure { padding: 1em; }
   .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
   .inlinetask {
     padding: 10px;
     border: 2px solid gray;
@@ -180,167 +193,178 @@
   /*]]>*/-->
 </style>
 <script type="text/javascript">
-/*
-@licstart  The following is the entire license notice for the
-JavaScript code in this tag.
-
-Copyright (C) 2012-2019 Free Software Foundation, Inc.
-
-The JavaScript code in this tag is free software: you can
-redistribute it and/or modify it under the terms of the GNU
-General Public License (GNU GPL) as published by the Free Software
-Foundation, either version 3 of the License, or (at your option)
-any later version.  The code is distributed WITHOUT ANY WARRANTY;
-without even the implied warranty of MERCHANTABILITY or FITNESS
-FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
-
-As additional permission under GNU GPL version 3 section 7, you
-may distribute non-source (e.g., minimized or compacted) forms of
-that code without the copy of the GNU GPL normally required by
-section 4, provided you include this license notice and a URL
-through which recipients can access the Corresponding Source.
-
-
-@licend  The above is the entire license notice
-for the JavaScript code in this tag.
-*/
+// @license magnet:?xt=urn:btih:e95b018ef3580986a04669f1b5879592219e2a7a&dn=public-domain.txt Public Domain
 <!--/*--><![CDATA[/*><!--*/
- function CodeHighlightOn(elem, id)
- {
-   var target = document.getElementById(id);
-   if(null != target) {
-     elem.cacheClassElem = elem.className;
-     elem.cacheClassTarget = target.className;
-     target.className = "code-highlighted";
-     elem.className   = "code-highlighted";
-   }
- }
- function CodeHighlightOff(elem, id)
- {
-   var target = document.getElementById(id);
-   if(elem.cacheClassElem)
-     elem.className = elem.cacheClassElem;
-   if(elem.cacheClassTarget)
-     target.className = elem.cacheClassTarget;
- }
-/*]]>*///-->
+     function CodeHighlightOn(elem, id)
+     {
+       var target = document.getElementById(id);
+       if(null != target) {
+         elem.classList.add("code-highlighted");
+         target.classList.add("code-highlighted");
+       }
+     }
+     function CodeHighlightOff(elem, id)
+     {
+       var target = document.getElementById(id);
+       if(null != target) {
+         elem.classList.remove("code-highlighted");
+         target.classList.remove("code-highlighted");
+       }
+     }
+    /*]]>*///-->
+// @license-end
 </script>
 </head>
 <body>
 <div id="content">
-<div id="outline-container-org326ca75" class="outline-2">
-<h2 id="org326ca75">Zhengyang Liu (刘正阳)</h2>
-<div class="outline-text-2" id="text-org326ca75">
+<div id="outline-container-orge76e887" class="outline-2">
+<h2 id="orge76e887">Zhengyang Liu (刘正阳)</h2>
+<div class="outline-text-2" id="text-orge76e887">
 <p>
-Hi! I am an Assistant Professor in <a href="http://cs.bit.edu.cn/">School of Computer Science and Technology</a> in <a href="http://www.bit.edu.cn/">Beijing Institute of Technology</a>. I obtained my PhD degree from <a href="http://www.cs.sjtu.edu.cn/">Department of Computer Science and Engineering</a>, <a href="https://www.sjtu.edu.cn/">Shanghai Jiao Tong University</a> in 2018, under the supervision of Prof. <a href="https://eecs.pku.edu.cn/info/1506/6620.htm">Xiaotie Deng</a>.
+Hi! I am an Assistant Professor in <a href="http://cs.bit.edu.cn/">School of Computer Science and Technology</a>
+in <a href="http://www.bit.edu.cn/">Beijing Institute of Technology</a>. I obtained my PhD degree from <a href="http://www.cs.sjtu.edu.cn/">Department
+of Computer Science and Engineering</a>, <a href="https://www.sjtu.edu.cn/">Shanghai Jiao Tong University</a> in 2018,
+under the supervision of Prof. <a href="https://eecs.pku.edu.cn/info/1506/6620.htm">Xiaotie Deng</a>.
 </p>
 </div>
-<div id="outline-container-orgf56d606" class="outline-3">
-<h3 id="orgf56d606">Research Interests</h3>
-<div class="outline-text-3" id="text-orgf56d606">
+<div id="outline-container-orgc848988" class="outline-3">
+<h3 id="orgc848988">Research Interests</h3>
+<div class="outline-text-3" id="text-orgc848988">
 <p>
-I am interested in theoretical computer science (TCS). Currently, I mainly work on algorithmic game theory.
+I am interested in theoretical computer science (TCS). Currently, I mainly
+work on algorithmic game theory.
 </p>
 </div>
 </div>
 </div>
-<div id="outline-container-orgc114f9c" class="outline-2">
-<h2 id="orgc114f9c">Publications</h2>
-<div class="outline-text-2" id="text-orgc114f9c">
+<div id="outline-container-org81f683c" class="outline-2">
+<h2 id="org81f683c">Publications</h2>
+<div class="outline-text-2" id="text-org81f683c">
 </div>
-<div id="outline-container-org0ed453a" class="outline-3">
-<h3 id="org0ed453a">On the Approximation of Nash Equilibria in Sparse Win-Lose Multi-player Games</h3>
-<div class="outline-text-3" id="text-org0ed453a">
+<div id="outline-container-orgb64fd58" class="outline-3">
+<h3 id="orgb64fd58">Optimal Pricing Schemes for Identical Items with Time-Sensitive Buyers</h3>
+<div class="outline-text-3" id="text-orgb64fd58">
+<p>
+with Liang Shan and Zihe Wang.
+</p>
+
+<p>
+To appear in <b>AAAI</b>'23.
+</p>
+</div>
+</div>
+<div id="outline-container-org7ed304c" class="outline-3">
+<h3 id="org7ed304c">Truthful Mechanisms for Steiner Tree Problems</h3>
+<div class="outline-text-3" id="text-org7ed304c">
+<p>
+with Jinshan Zhang, Xiaotie Deng and Jianwei Yin.
+</p>
+
+<p>
+To appear in <b>AAAI</b>'23.
+</p>
+</div>
+</div>
+<div id="outline-container-org6121257" class="outline-3">
+<h3 id="org6121257">On the Approximation of Nash Equilibria in Sparse Win-Lose Multi-player Games</h3>
+<div class="outline-text-3" id="text-org6121257">
 <p>
 with Jiawei Li and Xiaotie Deng.
 </p>
 
 <p>
-To appear in <b>AAAI</b> 2021.
+In <i>Proc. 35th AAAI Conference on Artificial Intelligence</i> (<b>AAAI</b>), pages
+5557-5565, 2021.
 </p>
 </div>
 </div>
-<div id="outline-container-orgd141e9f" class="outline-3">
-<h3 id="orgd141e9f">ACMo: Angle-Calibrated Moment Methods for Stochastic Optimization</h3>
-<div class="outline-text-3" id="text-orgd141e9f">
+<div id="outline-container-orgaac0d5d" class="outline-3">
+<h3 id="orgaac0d5d">ACMo: Angle-Calibrated Moment Methods for Stochastic Optimization</h3>
+<div class="outline-text-3" id="text-orgaac0d5d">
 <p>
 with Xunpeng Huang, Runxin Xu, Hao Zhou, Zhe Wang and Lei Li.
 </p>
 
 <p>
-To appear in <b>AAAI</b> 2021.
+In <i>Proc. 35th AAAI Conference on Artificial Intelligence</i> (<b>AAAI</b>), pages
+7857–7864, 2021.
 </p>
 </div>
 </div>
-<div id="outline-container-org459161f" class="outline-3">
-<h3 id="org459161f">On the Complexity of Sequential Posted Pricing</h3>
-<div class="outline-text-3" id="text-org459161f">
+<div id="outline-container-org49b8932" class="outline-3">
+<h3 id="org49b8932">On the Complexity of Sequential Posted Pricing</h3>
+<div class="outline-text-3" id="text-org49b8932">
 <p>
 with Tao Xiao and Wenhan Huang.
 </p>
 
 <p>
-In <i>Proceedings of the 19th International Conference on Autonomous Agents and Multiagent Systems</i> (<b>AAMAS</b>'20), pp.1521-1529, 2020.
+In <i>Proc. 19th International Conference on Autonomous Agents and Multiagent
+Systems</i> (<b>AAMAS</b>), pages 1521–1529, 2020.
 </p>
 </div>
 </div>
-<div id="outline-container-org78ae3d5" class="outline-3">
-<h3 id="org78ae3d5">SPAN: A Stochastic Projected Approximate Newton Method</h3>
-<div class="outline-text-3" id="text-org78ae3d5">
+<div id="outline-container-orgec4e2c0" class="outline-3">
+<h3 id="orgec4e2c0">SPAN: A Stochastic Projected Approximate Newton Method</h3>
+<div class="outline-text-3" id="text-orgec4e2c0">
 <p>
 with Xunpeng Huang, Xianfeng Liang, Yue Yu and Lei Li.
 </p>
 
 <p>
-In <i>Proceedings of the 34th AAAI Conference on Artificial Intelligence</i> (<b>AAAI</b>'20), pp.1520-1527, 2020.
+In <i>Proc. 34th AAAI Conference on Artificial Intelligence</i> (<b>AAAI</b>), pages
+1520-1527, 2020.
 </p>
 </div>
 </div>
-<div id="outline-container-org8873ad5" class="outline-3">
-<h3 id="org8873ad5">Distribution-free Junta Testing</h3>
-<div class="outline-text-3" id="text-org8873ad5">
+<div id="outline-container-org7b71fd9" class="outline-3">
+<h3 id="org7b71fd9">Distribution-free Junta Testing</h3>
+<div class="outline-text-3" id="text-org7b71fd9">
 <p>
-with <a href="http://www.cs.columbia.edu/~xichen/Homepage/Welcome.html">Xi Chen</a>, <a href="http://www.cs.columbia.edu/~rocco/">Rocco A. Servedio</a>, <a href="http://web.stanford.edu/~ying1123/">Ying Sheng</a> and <a href="https://dblp.org/pers/x/Xie:Jinyu.html">Jinyu Xie</a>.
-</p>
-
-<p>
-ACM Trans. Algorithms (<b>TALG</b>) 15(1): 1:1-1:23 (2019)
+with Xi Chen, Rocco A. Servedio, Ying Sheng, and Jinyu Xie.
 </p>
 
 <p>
-Conference version appeared in <i>Proceedings of the 50th Annual ACM SIGACT Symposium on the Theory of Computing</i> (<b>STOC</b>'18), pp.749-759, 2018.
-</p>
-</div>
-</div>
-<div id="outline-container-org8903292" class="outline-3">
-<h3 id="org8903292">On the Approximation of Nash Equilibria in Sparse Win-Lose Games</h3>
-<div class="outline-text-3" id="text-org8903292">
-<p>
-with <a href="http://web.stanford.edu/~ying1123/">Ying Sheng</a>.
+ACM Transactions on Algorithms, 15(1):1:1–1:23, 2019.
 </p>
 
 <p>
-In <i>Proceedings of the 32nd AAAI Conference on Artificial Intelligence</i> (<b>AAAI</b>'18), pp.1154-1160, 2018.
+Conference version appeared in <i>Proc. 50th Annual ACM SIGACT Symposium on the
+Theory of Computing</i> (<b>STOC</b>), pages 749-759, 2018.
 </p>
 </div>
 </div>
-<div id="outline-container-orgb7bc27f" class="outline-3">
-<h3 id="orgb7bc27f">Assignment and Pricing in Roommate Market</h3>
-<div class="outline-text-3" id="text-orgb7bc27f">
+<div id="outline-container-orgedeb54e" class="outline-3">
+<h3 id="orgedeb54e">On the Approximation of Nash Equilibria in Sparse Win-Lose Games</h3>
+<div class="outline-text-3" id="text-orgedeb54e">
 <p>
-with Pak Hay Chan, Xin Huang, <a href="http://chihaozhang.com/">Chihao Zhang</a> and <a href="http://www.cse.cuhk.edu.hk/~syzhang/">Shengyu Zhang</a>.
+with Ying Sheng.
 </p>
 
 <p>
-In <i>Proceedings of the 30th AAAI Conference on Artificial Intelligence</i> (<b>AAAI</b>'16), pp.446-452, 2016.
+In <i>Proc. 32nd AAAI Conference on Artificial Intelligence</i> (<b>AAAI</b>),
+pages 1154-1160, 2018.
 </p>
 </div>
 </div>
-<div id="outline-container-org446408f" class="outline-3">
-<h3 id="org446408f">Understanding PPA-completeness</h3>
-<div class="outline-text-3" id="text-org446408f">
+<div id="outline-container-org9c4acd7" class="outline-3">
+<h3 id="org9c4acd7">Assignment and Pricing in Roommate Market</h3>
+<div class="outline-text-3" id="text-org9c4acd7">
 <p>
-with <a href="https://eecs.pku.edu.cn/info/1506/6620.htm">Xiaotie Deng</a>, <a href="https://en.wikipedia.org/wiki/Jack_Edmonds">Jack R. Edmonds</a>, <a href="https://scholar.harvard.edu/zfeng/home">Zhe Feng</a>, <a href="https://facultyprofiles.ust.hk/profiles.php?profile=qi-qi-kaylaqi">Qi Qi</a>, and Zeying Xu.
+with Pak Hay Chan, Xin Huang, Chihao Zhang, and Shengyu Zhang.
+</p>
+
+<p>
+In <i>Proc. 30th AAAI Conference on Artificial Intelligence</i> (<b>AAAI</b>),
+pages 446-452, 2016.
+</p>
+</div>
+</div>
+<div id="outline-container-org60d6288" class="outline-3">
+<h3 id="org60d6288">Understanding PPA-completeness</h3>
+<div class="outline-text-3" id="text-org60d6288">
+<p>
+with Xiaotie Deng, Jack R. Edmonds, Zhe Feng, Qi Qi, and Zeying Xu.
 </p>
 
 <p>
@@ -348,34 +372,23 @@ J. Comput. Syst. Sci. (<b>JCSS</b>) 115: 146-168 (2021)
 </p>
 
 <p>
-Conference version appeared in <i>Proceedings of the 31st Conference on Computational Complexity</i> (<b>CCC</b>'16), 23:1-23:25, 2016.
-</p>
-</div>
-</div>
-<div id="outline-container-org6fc19d7" class="outline-3">
-<h3 id="org6fc19d7">Combining Factorization Model and Additive Forest for Collaborative Followee Recommendation</h3>
-<div class="outline-text-3" id="text-org6fc19d7">
-<p>
-with <a href="https://tqchen.com/">Tianqi Chen</a>, <a href="https://chtlp.github.io/">Linpeng Tang</a>, <a href="https://lqhl.me/">Qin Liu</a>, <a href="https://www.cc.gatech.edu/~dyang888/">Diyi Yang</a>, <a href="http://vcl.ucsd.edu/~sxie/">Saining Xie</a>, <a href="https://dblp.org/pers/c/Cao:Xuezhi.html">Xuezhi Cao</a>, <a href="http://mi.eng.cam.ac.uk/~cw564/">Chunyang Wu</a>, <a href="http://www.yepyao.com/">Enpeng Yao</a>, <a href="https://dblp.org/pers/j/Jiang:Zhansheng.html">Zhansheng Jiang</a>, <a href="https://dblp.uni-trier.de/pers/hd/c/Chen_0015:Cheng">Cheng Chen</a>, <a href="https://homes.cs.washington.edu/~whkong/">Weihao Kong</a> and <a href="http://apex.sjtu.edu.cn/members/yyu">Yong Yu</a>.
-</p>
-
-<p>
-<i>KDD-Cup Workshop</i> (1st in track1), 2012.
+Conference version appeared in <i>Proc. 31st Conference on Computational
+Complexity</i> (<b>CCC</b>), pages 23:1-23:25, 2016.
 </p>
 </div>
 </div>
 </div>
-<div id="outline-container-orge6a8ac5" class="outline-2">
-<h2 id="orge6a8ac5">Professional Service</h2>
-<div class="outline-text-2" id="text-orge6a8ac5">
+<div id="outline-container-org49df92b" class="outline-2">
+<h2 id="org49df92b">Professional Service</h2>
+<div class="outline-text-2" id="text-org49df92b">
 <p>
 Program Committee member of IJTCS 2020, FAW 2020, IJCAI 2020, AAAI 2020.
 </p>
 </div>
 </div>
-<div id="outline-container-orgc5c5819" class="outline-2">
-<h2 id="orgc5c5819">Contact</h2>
-<div class="outline-text-2" id="text-orgc5c5819">
+<div id="outline-container-org9f51899" class="outline-2">
+<h2 id="org9f51899">Contact</h2>
+<div class="outline-text-2" id="text-org9f51899">
 <dl class="org-dl">
 <dt>Email</dt><dd>firstname AT bit.edu.cn</dd>
 <dt>Office</dt><dd>Room 1001, Central Building, Zhongguancun Campus.</dd>
