@@ -3,13 +3,13 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2023-03-21 Tue 17:02 -->
+<!-- 2023-09-22 Fri 22:40 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Zhengyang Liu (刘正阳)</title>
-<meta name="generator" content="Org mode" />
-<style type="text/css">
- <!--/*--><![CDATA[/*><!--*/
+<meta name="generator" content="Org Mode" />
+<style>
+  #content { max-width: 60em; margin: auto; }
   .title  { text-align: center;
              margin-bottom: .2em; }
   .subtitle { text-align: center;
@@ -30,8 +30,9 @@
   #postamble p, #preamble p { font-size: 90%; margin: .2em; }
   p.verse { margin-left: 3%; }
   pre {
-    border: 1px solid #ccc;
-    box-shadow: 3px 3px 3px #eee;
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
     padding: 8pt;
     font-family: monospace;
     overflow: auto;
@@ -40,21 +41,21 @@
   pre.src {
     position: relative;
     overflow: auto;
-    padding-top: 1.2em;
   }
   pre.src:before {
     display: none;
     position: absolute;
-    background-color: white;
-    top: -10px;
-    right: 10px;
+    top: -8px;
+    right: 12px;
     padding: 3px;
-    border: 1px solid black;
+    color: #555;
+    background-color: #f2f2f299;
   }
   pre.src:hover:before { display: inline; margin-top: 14px;}
   /* Languages per Org manual */
   pre.src-asymptote:before { content: 'Asymptote'; }
   pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
   pre.src-C:before { content: 'C'; }
   /* pre.src-C++ doesn't work in CSS */
   pre.src-clojure:before { content: 'Clojure'; }
@@ -189,35 +190,12 @@
     { font-size: 10px; font-weight: bold; white-space: nowrap; }
   .org-info-js_search-highlight
     { background-color: #ffff00; color: #000000; font-weight: bold; }
-  .org-svg { width: 90%; }
-  /*]]>*/-->
+  .org-svg { }
 </style>
 <link rel="stylesheet" type="text/css" href="https://orgmode.org/worg/style/worg.css"/>
-<script type="text/javascript">
-// @license magnet:?xt=urn:btih:e95b018ef3580986a04669f1b5879592219e2a7a&dn=public-domain.txt Public Domain
-<!--/*--><![CDATA[/*><!--*/
-     function CodeHighlightOn(elem, id)
-     {
-       var target = document.getElementById(id);
-       if(null != target) {
-         elem.classList.add("code-highlighted");
-         target.classList.add("code-highlighted");
-       }
-     }
-     function CodeHighlightOff(elem, id)
-     {
-       var target = document.getElementById(id);
-       if(null != target) {
-         elem.classList.remove("code-highlighted");
-         target.classList.remove("code-highlighted");
-       }
-     }
-    /*]]>*///-->
-// @license-end
-</script>
 </head>
 <body>
-<div id="content">
+<div id="content" class="content">
 <h1 class="title">Zhengyang Liu (刘正阳)</h1>
 <p>
 Hi! I am an Assistant Professor in <a href="http://cs.bit.edu.cn/">School of Computer Science and Technology</a> in <a href="http://www.bit.edu.cn/">Beijing Institute of Technology</a>. I obtained my PhD degree from <a href="http://www.cs.sjtu.edu.cn/">Department of Computer Science and Engineering</a>, <a href="https://www.sjtu.edu.cn/">Shanghai Jiao Tong University</a> in 2018, under the supervision of Prof. <a href="https://cfcs.pku.edu.cn/english/people/faculty/xiaotiedeng/index.htm">Xiaotie Deng</a>.
@@ -227,46 +205,57 @@ Hi! I am an Assistant Professor in <a href="http://cs.bit.edu.cn/">School of Com
 I am interested in theoretical computer science (TCS). Currently, I mainly work on algorithmic game theory.
 </p>
 
-<div id="outline-container-org344ac2b" class="outline-2">
-<h2 id="org344ac2b">Papers</h2>
-<div class="outline-text-2" id="text-org344ac2b">
+<div id="outline-container-org9246eae" class="outline-2">
+<h2 id="org9246eae">Papers</h2>
+<div class="outline-text-2" id="text-org9246eae">
 </div>
 <ul class="org-ul">
-<li><a id="orgf7046f3"></a>Improved Approximation Ratios of Fixed-Price Mechanisms in Bilateral Trades<br />
-<div class="outline-text-3" id="text-orgf7046f3">
-<p>
-with Zeyu Ren and Zihe Wang.
-</p>
-
-<p>
-To be published in <b>STOC</b>'23.
-</p>
-</div>
-</li>
-<li><a id="org9c84b9b"></a>Optimal Pricing Schemes for Identical Items with Time-Sensitive Buyers<br />
-<div class="outline-text-3" id="text-org9c84b9b">
-<p>
-with Liang Shan and Zihe Wang.
-</p>
-
-<p>
-To be published in <b>AAAI</b>'23.
-</p>
-</div>
-</li>
-<li><a id="orgf479a5d"></a>Truthful Mechanisms for Steiner Tree Problems<br />
-<div class="outline-text-3" id="text-orgf479a5d">
+<li><a id="org09f3273"></a>Improved Truthful Rank Approximation for Rank-Maximal Catchings<br />
+<div class="outline-text-3" id="text-org09f3273">
 <p>
 with Jinshan Zhang, Xiaotie Deng and Jianwei Yin.
 </p>
 
 <p>
-To be published in <b>AAAI</b>'23.
+To be published in <b>WINE</b>'23.
 </p>
 </div>
 </li>
-<li><a id="org376930c"></a>On the Approximation of Nash Equilibria in Sparse Win-Lose Multi-player Games<br />
-<div class="outline-text-3" id="text-org376930c">
+<li><a id="org148a993"></a>Improved Approximation Ratios of Fixed-Price Mechanisms in Bilateral Trades<br />
+<div class="outline-text-3" id="text-org148a993">
+<p>
+with Zeyu Ren and Zihe Wang.
+</p>
+
+<p>
+In <i>Proc. 55th ACM Symposium on the Theory of Computing</i> (<b>STOC</b>), pages 751–760, 2023.
+</p>
+</div>
+</li>
+<li><a id="org25cae3a"></a>Optimal Pricing Schemes for Identical Items with Time-Sensitive Buyers<br />
+<div class="outline-text-3" id="text-org25cae3a">
+<p>
+with Liang Shan and Zihe Wang.
+</p>
+
+<p>
+In <i>Proc. 37th AAAI Conference on Artificial Intelligence</i> (<b>AAAI</b>), pages 5773-5780, 2023.
+</p>
+</div>
+</li>
+<li><a id="org15c99ad"></a>Truthful Mechanisms for Steiner Tree Problems<br />
+<div class="outline-text-3" id="text-org15c99ad">
+<p>
+with Jinshan Zhang, Xiaotie Deng and Jianwei Yin.
+</p>
+
+<p>
+In <i>Proc. 37th AAAI Conference on Artificial Intelligence</i> (<b>AAAI</b>), pages 5884-5891, 2023.
+</p>
+</div>
+</li>
+<li><a id="orgf413f2b"></a>On the Approximation of Nash Equilibria in Sparse Win-Lose Multi-player Games<br />
+<div class="outline-text-3" id="text-orgf413f2b">
 <p>
 with Jiawei Li and Xiaotie Deng.
 </p>
@@ -276,8 +265,8 @@ In <i>Proc. 35th AAAI Conference on Artificial Intelligence</i> (<b>AAAI</b>), p
 </p>
 </div>
 </li>
-<li><a id="org23c12ba"></a>ACMo: Angle-Calibrated Moment Methods for Stochastic Optimization<br />
-<div class="outline-text-3" id="text-org23c12ba">
+<li><a id="org9ec3846"></a>ACMo: Angle-Calibrated Moment Methods for Stochastic Optimization<br />
+<div class="outline-text-3" id="text-org9ec3846">
 <p>
 with Xunpeng Huang, Runxin Xu, Hao Zhou, Zhe Wang and Lei Li.
 </p>
@@ -287,8 +276,8 @@ In <i>Proc. 35th AAAI Conference on Artificial Intelligence</i> (<b>AAAI</b>), p
 </p>
 </div>
 </li>
-<li><a id="orgde2c14b"></a>On the Complexity of Sequential Posted Pricing<br />
-<div class="outline-text-3" id="text-orgde2c14b">
+<li><a id="org57802c1"></a>On the Complexity of Sequential Posted Pricing<br />
+<div class="outline-text-3" id="text-org57802c1">
 <p>
 with Tao Xiao and Wenhan Huang.
 </p>
@@ -298,8 +287,8 @@ In <i>Proc. 19th International Conference on Autonomous Agents and Multiagent Sy
 </p>
 </div>
 </li>
-<li><a id="org052a0e6"></a>SPAN: A Stochastic Projected Approximate Newton Method<br />
-<div class="outline-text-3" id="text-org052a0e6">
+<li><a id="org39599da"></a>SPAN: A Stochastic Projected Approximate Newton Method<br />
+<div class="outline-text-3" id="text-org39599da">
 <p>
 with Xunpeng Huang, Xianfeng Liang, Yue Yu and Lei Li.
 </p>
@@ -309,19 +298,19 @@ In <i>Proc. 34th AAAI Conference on Artificial Intelligence</i> (<b>AAAI</b>), p
 </p>
 </div>
 </li>
-<li><a id="orgb566ae1"></a>Distribution-free Junta Testing<br />
-<div class="outline-text-3" id="text-orgb566ae1">
+<li><a id="org0347da6"></a>Distribution-free Junta Testing<br />
+<div class="outline-text-3" id="text-org0347da6">
 <p>
 with Xi Chen, Rocco A. Servedio, Ying Sheng, and Jinyu Xie.
 </p>
 
 <p>
-In <i>Proc. 50th ACM SIGACT Symposium on the Theory of Computing</i> (<b>STOC</b>), pages 749-759, 2018.
+In <i>Proc. 50th ACM Symposium on the Theory of Computing</i> (<b>STOC</b>), pages 749-759, 2018.
 </p>
 </div>
 </li>
-<li><a id="orgfd18dab"></a>On the Approximation of Nash Equilibria in Sparse Win-Lose Games<br />
-<div class="outline-text-3" id="text-orgfd18dab">
+<li><a id="orgd3c87e7"></a>On the Approximation of Nash Equilibria in Sparse Win-Lose Games<br />
+<div class="outline-text-3" id="text-orgd3c87e7">
 <p>
 with Ying Sheng.
 </p>
@@ -331,8 +320,8 @@ In <i>Proc. 32nd AAAI Conference on Artificial Intelligence</i> (<b>AAAI</b>), p
 </p>
 </div>
 </li>
-<li><a id="org06efcea"></a>Assignment and Pricing in Roommate Market<br />
-<div class="outline-text-3" id="text-org06efcea">
+<li><a id="orgb249a50"></a>Assignment and Pricing in Roommate Market<br />
+<div class="outline-text-3" id="text-orgb249a50">
 <p>
 with Pak Hay Chan, Xin Huang, Chihao Zhang, and Shengyu Zhang.
 </p>
@@ -342,8 +331,8 @@ In <i>Proc. 30th AAAI Conference on Artificial Intelligence</i> (<b>AAAI</b>), p
 </p>
 </div>
 </li>
-<li><a id="org1a70b36"></a>Understanding PPA-completeness<br />
-<div class="outline-text-3" id="text-org1a70b36">
+<li><a id="org72b7bac"></a>Understanding PPA-completeness<br />
+<div class="outline-text-3" id="text-org72b7bac">
 <p>
 with Xiaotie Deng, Jack R. Edmonds, Zhe Feng, Qi Qi, and Zeying Xu.
 </p>
@@ -356,25 +345,25 @@ In <i>Proc. 31st Conference on Computational Complexity</i> (<b>CCC</b>), pages 
 </ul>
 </div>
 
-<div id="outline-container-org0f0e425" class="outline-2">
-<h2 id="org0f0e425">Teaching</h2>
-<div class="outline-text-2" id="text-org0f0e425">
+<div id="outline-container-org262ac1c" class="outline-2">
+<h2 id="org262ac1c">Teaching</h2>
+<div class="outline-text-2" id="text-org262ac1c">
 </div>
 <ul class="org-ul">
-<li><a id="org394bce2"></a>S23, Topics in Algorithmic Game Theory: <i>Equilibrium Computation</i><br /></li>
-<li><a id="orgaa60b89"></a>S23, Combinatorics in CS: <i>Around the PCP Theorem</i><br /></li>
-<li><a id="org1f70d60"></a>S23, Mathematical Foundations of AI<br /></li>
-<li><a id="org4fae195"></a>F22, Topics in Algorithmic Game Theory: <i>Fair Division</i><br /></li>
-<li><a id="org624c5e9"></a>S22, Topics in Algorithmic Game Theory: <i>Mechanism Design</i><br /></li>
-<li><a id="orgfbdefe0"></a>F21, Topics in Algorithmic Game Theory: <i>Mechanism Design</i><br /></li>
+<li><a id="org82cbd56"></a>F23, Programming in C++<br /></li>
+<li><a id="orga4b19a4"></a>S23, Topics in Algorithmic Game Theory: <i>Equilibrium Computation</i><br /></li>
+<li><a id="org77c839e"></a>S23, Topics in Combinatorics: <i>Around the PCP Theorem</i><br /></li>
+<li><a id="org3ab5ccf"></a>S23, Mathematical Foundations of AI<br /></li>
+<li><a id="orgfd2959a"></a>F22, Topics in Algorithmic Game Theory: <i>Fair Division</i><br /></li>
+<li><a id="org648a386"></a>S22, Topics in Algorithmic Game Theory: <i>Mechanism Design</i><br /></li>
+<li><a id="orge39446b"></a>F21, Topics in Algorithmic Game Theory: <i>Mechanism Design</i><br /></li>
 </ul>
 </div>
 
-<div id="outline-container-org9733583" class="outline-2">
-<h2 id="org9733583">Contact</h2>
-<div class="outline-text-2" id="text-org9733583">
+<div id="outline-container-org1098b48" class="outline-2">
+<h2 id="org1098b48">Contact</h2>
+<div class="outline-text-2" id="text-org1098b48">
 <dl class="org-dl">
-<dt>BITer</dt><dd>i北理 (Recommended)</dd>
 <dt>Email</dt><dd>firstname AT bit DOT edu DOT cn</dd>
 <dt>Office</dt><dd>Room 1001, Central Building, Zhongguancun Campus</dd>
 </dl>
