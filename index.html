@@ -3,196 +3,22 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2026-01-25 Sun 23:49 -->
+<!-- 2026-01-30 Fri 21:02 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Zhengyang Liu</title>
+<meta name="author" content="Zhengyang Liu" />
 <meta name="generator" content="Org Mode" />
-<style>
-  #content { max-width: 60em; margin: auto; }
-  .title  { text-align: center;
-             margin-bottom: .2em; }
-  .subtitle { text-align: center;
-              font-size: medium;
-              font-weight: bold;
-              margin-top:0; }
-  .todo   { font-family: monospace; color: red; }
-  .done   { font-family: monospace; color: green; }
-  .priority { font-family: monospace; color: orange; }
-  .tag    { background-color: #eee; font-family: monospace;
-            padding: 2px; font-size: 80%; font-weight: normal; }
-  .timestamp { color: #bebebe; }
-  .timestamp-kwd { color: #5f9ea0; }
-  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
-  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
-  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
-  .underline { text-decoration: underline; }
-  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
-  p.verse { margin-left: 3%; }
-  pre {
-    border: 1px solid #e6e6e6;
-    border-radius: 3px;
-    background-color: #f2f2f2;
-    padding: 8pt;
-    font-family: monospace;
-    overflow: auto;
-    margin: 1.2em;
-  }
-  pre.src {
-    position: relative;
-    overflow: auto;
-  }
-  pre.src:before {
-    display: none;
-    position: absolute;
-    top: -8px;
-    right: 12px;
-    padding: 3px;
-    color: #555;
-    background-color: #f2f2f299;
-  }
-  pre.src:hover:before { display: inline; margin-top: 14px;}
-  /* Languages per Org manual */
-  pre.src-asymptote:before { content: 'Asymptote'; }
-  pre.src-awk:before { content: 'Awk'; }
-  pre.src-authinfo::before { content: 'Authinfo'; }
-  pre.src-C:before { content: 'C'; }
-  /* pre.src-C++ doesn't work in CSS */
-  pre.src-clojure:before { content: 'Clojure'; }
-  pre.src-css:before { content: 'CSS'; }
-  pre.src-D:before { content: 'D'; }
-  pre.src-ditaa:before { content: 'ditaa'; }
-  pre.src-dot:before { content: 'Graphviz'; }
-  pre.src-calc:before { content: 'Emacs Calc'; }
-  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
-  pre.src-fortran:before { content: 'Fortran'; }
-  pre.src-gnuplot:before { content: 'gnuplot'; }
-  pre.src-haskell:before { content: 'Haskell'; }
-  pre.src-hledger:before { content: 'hledger'; }
-  pre.src-java:before { content: 'Java'; }
-  pre.src-js:before { content: 'Javascript'; }
-  pre.src-latex:before { content: 'LaTeX'; }
-  pre.src-ledger:before { content: 'Ledger'; }
-  pre.src-lisp:before { content: 'Lisp'; }
-  pre.src-lilypond:before { content: 'Lilypond'; }
-  pre.src-lua:before { content: 'Lua'; }
-  pre.src-matlab:before { content: 'MATLAB'; }
-  pre.src-mscgen:before { content: 'Mscgen'; }
-  pre.src-ocaml:before { content: 'Objective Caml'; }
-  pre.src-octave:before { content: 'Octave'; }
-  pre.src-org:before { content: 'Org mode'; }
-  pre.src-oz:before { content: 'OZ'; }
-  pre.src-plantuml:before { content: 'Plantuml'; }
-  pre.src-processing:before { content: 'Processing.js'; }
-  pre.src-python:before { content: 'Python'; }
-  pre.src-R:before { content: 'R'; }
-  pre.src-ruby:before { content: 'Ruby'; }
-  pre.src-sass:before { content: 'Sass'; }
-  pre.src-scheme:before { content: 'Scheme'; }
-  pre.src-screen:before { content: 'Gnu Screen'; }
-  pre.src-sed:before { content: 'Sed'; }
-  pre.src-sh:before { content: 'shell'; }
-  pre.src-sql:before { content: 'SQL'; }
-  pre.src-sqlite:before { content: 'SQLite'; }
-  /* additional languages in org.el's org-babel-load-languages alist */
-  pre.src-forth:before { content: 'Forth'; }
-  pre.src-io:before { content: 'IO'; }
-  pre.src-J:before { content: 'J'; }
-  pre.src-makefile:before { content: 'Makefile'; }
-  pre.src-maxima:before { content: 'Maxima'; }
-  pre.src-perl:before { content: 'Perl'; }
-  pre.src-picolisp:before { content: 'Pico Lisp'; }
-  pre.src-scala:before { content: 'Scala'; }
-  pre.src-shell:before { content: 'Shell Script'; }
-  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
-  /* additional language identifiers per "defun org-babel-execute"
-       in ob-*.el */
-  pre.src-cpp:before  { content: 'C++'; }
-  pre.src-abc:before  { content: 'ABC'; }
-  pre.src-coq:before  { content: 'Coq'; }
-  pre.src-groovy:before  { content: 'Groovy'; }
-  /* additional language identifiers from org-babel-shell-names in
-     ob-shell.el: ob-shell is the only babel language using a lambda to put
-     the execution function name together. */
-  pre.src-bash:before  { content: 'bash'; }
-  pre.src-csh:before  { content: 'csh'; }
-  pre.src-ash:before  { content: 'ash'; }
-  pre.src-dash:before  { content: 'dash'; }
-  pre.src-ksh:before  { content: 'ksh'; }
-  pre.src-mksh:before  { content: 'mksh'; }
-  pre.src-posh:before  { content: 'posh'; }
-  /* Additional Emacs modes also supported by the LaTeX listings package */
-  pre.src-ada:before { content: 'Ada'; }
-  pre.src-asm:before { content: 'Assembler'; }
-  pre.src-caml:before { content: 'Caml'; }
-  pre.src-delphi:before { content: 'Delphi'; }
-  pre.src-html:before { content: 'HTML'; }
-  pre.src-idl:before { content: 'IDL'; }
-  pre.src-mercury:before { content: 'Mercury'; }
-  pre.src-metapost:before { content: 'MetaPost'; }
-  pre.src-modula-2:before { content: 'Modula-2'; }
-  pre.src-pascal:before { content: 'Pascal'; }
-  pre.src-ps:before { content: 'PostScript'; }
-  pre.src-prolog:before { content: 'Prolog'; }
-  pre.src-simula:before { content: 'Simula'; }
-  pre.src-tcl:before { content: 'tcl'; }
-  pre.src-tex:before { content: 'TeX'; }
-  pre.src-plain-tex:before { content: 'Plain TeX'; }
-  pre.src-verilog:before { content: 'Verilog'; }
-  pre.src-vhdl:before { content: 'VHDL'; }
-  pre.src-xml:before { content: 'XML'; }
-  pre.src-nxml:before { content: 'XML'; }
-  /* add a generic configuration mode; LaTeX export needs an additional
-     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
-  pre.src-conf:before { content: 'Configuration File'; }
-
-  table { border-collapse:collapse; }
-  caption.t-above { caption-side: top; }
-  caption.t-bottom { caption-side: bottom; }
-  td, th { vertical-align:top;  }
-  th.org-right  { text-align: center;  }
-  th.org-left   { text-align: center;   }
-  th.org-center { text-align: center; }
-  td.org-right  { text-align: right;  }
-  td.org-left   { text-align: left;   }
-  td.org-center { text-align: center; }
-  dt { font-weight: bold; }
-  .footpara { display: inline; }
-  .footdef  { margin-bottom: 1em; }
-  .figure { padding: 1em; }
-  .figure p { text-align: center; }
-  .equation-container {
-    display: table;
-    text-align: center;
-    width: 100%;
-  }
-  .equation {
-    vertical-align: middle;
-  }
-  .equation-label {
-    display: table-cell;
-    text-align: right;
-    vertical-align: middle;
-  }
-  .inlinetask {
-    padding: 10px;
-    border: 2px solid gray;
-    margin: 10px;
-    background: #ffffcc;
-  }
-  #org-div-home-and-up
-   { text-align: right; font-size: 70%; white-space: nowrap; }
-  textarea { overflow-x: auto; }
-  .linenr { font-size: smaller }
-  .code-highlighted { background-color: #ffff00; }
-  .org-info-js_info-navigation { border-style: none; }
-  #org-info-js_console-label
-    { font-size: 10px; font-weight: bold; white-space: nowrap; }
-  .org-info-js_search-highlight
-    { background-color: #ffff00; color: #000000; font-weight: bold; }
-  .org-svg { }
-</style>
-<link rel="stylesheet" type="text/css" href="https://orgmode.org/worg/style/worg.css"/>
+<link rel="stylesheet" type="text/css" href="https://fniessen.github.io/org-html-themes/src/readtheorg_theme/css/htmlize.css"/>
+<link rel="stylesheet" type="text/css" href="https://fniessen.github.io/org-html-themes/src/readtheorg_theme/css/readtheorg.css"/>
+<link rel="stylesheet" type="text/css" href="https://fniessen.github.io/org-html-themes/src/readtheorg_theme/css/code-copy.css"/>
+<link rel="stylesheet" type="text/css" href="src/readtheorg_theme/css/search.css"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="https://fniessen.github.io/org-html-themes/src/lib/js/jquery.stickytableheaders.min.js"></script>
+<script type="text/javascript" src="https://fniessen.github.io/org-html-themes/src/readtheorg_theme/js/search.js"></script>
+<script type="text/javascript" src="https://fniessen.github.io/org-html-themes/src/readtheorg_theme/js/readtheorg.js"></script>
+<script type="text/javascript" src="https://fniessen.github.io/org-html-themes/src/readtheorg_theme/js/code-copy.js"></script>
 </head>
 <body>
 <div id="content" class="content">
@@ -201,313 +27,245 @@
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents" role="doc-toc">
 <ul>
-<li><a href="#org26b3080">Papers</a></li>
-<li><a href="#org41cdb4d">Working Papers</a></li>
-<li><a href="#org1e7d7f0">Teaching</a></li>
-<li><a href="#org50acc76">Useful Links</a></li>
-<li><a href="#orgb5ef08f">Contact</a></li>
+<li><a href="#org9b56bba">Contact</a></li>
+<li><a href="#org27fb6e2">Papers</a></li>
+<li><a href="#orgc674387">Working Papers</a></li>
+<li><a href="#orgd6499a3">Teaching</a></li>
+<li><a href="#org40b3224">Useful Links</a></li>
 </ul>
 </div>
 </div>
 <p>
-Hi! I am an Associate Professor in <a href="http://cs.bit.edu.cn/">School of Computer Science and Technology</a> in <a href="http://www.bit.edu.cn/">Beijing Institute of Technology</a>. I obtained my PhD degree from <a href="http://www.cs.sjtu.edu.cn/">Department of Computer Science and Engineering</a>, <a href="https://www.sjtu.edu.cn/">Shanghai Jiao Tong University</a>, under the supervision of Prof. <a href="https://cfcs.pku.edu.cn/english/people/faculty/xiaotiedeng/index.htm">Xiaotie Deng</a>.
+Hi! I am an Associate Professor at the <a href="http://cs.bit.edu.cn/">School of Computer Science and Technology</a>, <a href="http://www.bit.edu.cn/">Beijing Institute of Technology</a>. I received my PhD from the <a href="http://www.cs.sjtu.edu.cn/">Department of Computer Science and Engineering</a> at <a href="https://www.sjtu.edu.cn/">Shanghai Jiao Tong University</a>, under the supervision of Prof. <a href="https://cfcs.pku.edu.cn/english/people/faculty/xiaotiedeng/index.htm">Xiaotie Deng</a>.
 </p>
 
 <p>
-I am interested in theoretical computer science (TCS). Currently, I mainly work on algorithmic game theory.
+I am interested in theoretical computer science. Currently, I mainly work on algorithmic game theory.
 </p>
-
-<div id="outline-container-org26b3080" class="outline-2">
-<h2 id="org26b3080">Papers</h2>
-<div class="outline-text-2" id="text-org26b3080">
+<div id="outline-container-org9b56bba" class="outline-2">
+<h2 id="org9b56bba">Contact</h2>
+<div class="outline-text-2" id="text-org9b56bba">
+<dl class="org-dl">
+<dt>Email</dt><dd>firstname AT bit DOT edu DOT cn</dd>
+<dt>Office</dt><dd>Room 1034, Central Building, <a href="https://english.bit.edu.cn/2023-10/25/c_933594.htm">Zhongguancun Campus</a></dd>
+</dl>
+</div>
+</div>
+<div id="outline-container-org27fb6e2" class="outline-2">
+<h2 id="org27fb6e2">Papers</h2>
+<div class="outline-text-2" id="text-org27fb6e2">
 </div>
 <ul class="org-ul">
-<li><a id="orgde61444"></a>Pacing Equilibria in Second-Price Auctions with Few Buyers<br />
-<div class="outline-text-3" id="text-orgde61444">
+<li><a id="orgf3367db"></a>Pacing Equilibria in Second-Price Auctions with Few Buyers<br />
+<div class="outline-text-3" id="text-orgf3367db">
 <p>
-with Yonglei Yan and Zihe Wang.
-</p>
-
-<p>
+with Yonglei Yan and Zihe Wang.<br />
 To be published in <i>the 40th AAAI Conference on Artificial Intelligence</i> (<b>AAAI</b>), 2026.
 </p>
 </div>
 </li>
-<li><a id="org5f1a8e1"></a>Adaptive Online Convex Optimization with Unknown Feedback Delay<br />
-<div class="outline-text-3" id="text-org5f1a8e1">
+<li><a id="orgad5eee9"></a>Adaptive Online Convex Optimization with Unknown Feedback Delay<br />
+<div class="outline-text-3" id="text-orgad5eee9">
 <p>
-with Ping Wu, Heyan Huang and Haolin Lu.
-</p>
-
-<p>
-In <i>Expert Systems with Applications</i>, vol 297: 129269, 2026.
+with Ping Wu, Heyan Huang and Haolin Lu.<br />
+In <b>Expert Systems with Applications</b>, vol 297: 129269, 2026.
 </p>
 </div>
 </li>
-<li><a id="orgb64f4e6"></a>Striking the Balance: Optimizing Pricing Schemes for Time-Sensitive Buyers<br />
-<div class="outline-text-3" id="text-orgb64f4e6">
+<li><a id="orga1da569"></a>Striking the Balance: Optimizing Pricing Schemes for Time-Sensitive Buyers<br />
+<div class="outline-text-3" id="text-orga1da569">
 <p>
-with Liang Shan and Zihe Wang.
-</p>
-
-<p>
-In <i>Theoretical Computer Science</i>, vol 1058: 115592, 2025.
-</p>
-
-<p>
-Conference version: AAAI'23, Optimal Pricing Schemes for Identical Items with Time-Sensitive Buyers
+with Liang Shan and Zihe Wang.<br />
+In <b>Theoretical Computer Science</b>, vol 1058: 115592, 2025.<br />
+Conference version: AAAI&rsquo;23, Optimal Pricing Schemes for Identical Items with Time-Sensitive Buyers.
 </p>
 </div>
 </li>
-<li><a id="org8ffac27"></a>PRIM: Towards Practical In-Image Multilingual Machine Translation<br />
-<div class="outline-text-3" id="text-org8ffac27">
+<li><a id="org4af0b48"></a>PRIM: Towards Practical In-Image Multilingual Machine Translation<br />
+<div class="outline-text-3" id="text-org4af0b48">
 <p>
-Yanzhi Tian, Zeming Liu, Zhengyang Liu, Chong Feng, Xin Li, Heyan Huang and Yuhang Guo.
-</p>
-
-<p>
+Yanzhi Tian, Zeming Liu, Zhengyang Liu, Chong Feng, Xin Li, Heyan Huang and Yuhang Guo.<br />
 In <i>Proc. 30th Conference on Empirical Methods in Natural Language Processing</i> (<b>EMNLP</b>), pages 13682-13697, 2025.
 </p>
 </div>
 </li>
-<li><a id="orgb6dd9b3"></a>Approximating EFX through a New Notion of Fairness<br />
-<div class="outline-text-3" id="text-orgb6dd9b3">
+<li><a id="org3eab2fc"></a>Approximating EFX through a New Notion of Fairness<br />
+<div class="outline-text-3" id="text-org3eab2fc">
 <p>
-with Rui Dai, Yuxuan Wang and Zihe Wang.
-</p>
-
-<p>
+with Rui Dai, Yuxuan Wang and Zihe Wang.<br />
 In <i>Proc. 19th Annual Conference on Theory and Applications of Models of Computation</i> (<b>TAMC</b>), pages 148-162, 2025.
 </p>
 </div>
 </li>
-<li><a id="orgdc24e67"></a>On the Oscillations in Cournot Games with Best Response Strategies<br />
-<div class="outline-text-3" id="text-orgdc24e67">
+<li><a id="orga28b797"></a>On the Oscillations in Cournot Games with Best Response Strategies<br />
+<div class="outline-text-3" id="text-orga28b797">
 <p>
-with Haolin Lu, Liang Shan and Zihe Wang.
-</p>
-
-<p>
+with Haolin Lu, Liang Shan and Zihe Wang.<br />
 In <i>Proc. 31st International Computing and Combinatorics Conference</i> (<b>COCOON</b>), pages 320-332, 2025.
 </p>
 </div>
 </li>
-
-<li><a id="org2da2492"></a>Exploring In-Image Machine Translation with Real-World Background<br />
-<div class="outline-text-3" id="text-org2da2492">
+<li><a id="org5fc798e"></a>Exploring In-Image Machine Translation with Real-World Background<br />
+<div class="outline-text-3" id="text-org5fc798e">
 <p>
-Yanzhi Tian, Zeming Liu, Zhengyang Liu and Yuhang Guo.
-</p>
-
-<p>
+Yanzhi Tian, Zeming Liu, Zhengyang Liu and Yuhang Guo.<br />
 In <i>Findings of the Association for Computational Linguistics</i> (<b>ACL</b>), pages 124-137, 2025.
 </p>
 </div>
 </li>
-
-<li><a id="orgebe862a"></a>Environmental Policies within Cournot Oligopoly<br />
-<div class="outline-text-3" id="text-orgebe862a">
+<li><a id="org7d8ec31"></a>Environmental Policies within Cournot Oligopoly<br />
+<div class="outline-text-3" id="text-org7d8ec31">
 <p>
-with Liang Shan, Haoqiang Huang and Zihe Wang.
-</p>
-
-<p>
+with Liang Shan, Haoqiang Huang and Zihe Wang.<br />
 In <i>Proc. 24th International Conference on Autonomous Agents and Multiagent Systems</i> (<b>AAMAS</b>, Extended Abstract), pages 2738-2740, 2025.
 </p>
 </div>
 </li>
-
-<li><a id="org6ce6d3f"></a>On the Constrained Online Convex Optimization with Feedback Delay<br />
-<div class="outline-text-3" id="text-org6ce6d3f">
+<li><a id="org2381f39"></a>On the Constrained Online Convex Optimization with Feedback Delay<br />
+<div class="outline-text-3" id="text-org2381f39">
 <p>
-with Heyan Huang, Ping Wu and Haolin Lu.
-</p>
-
-<p>
-In <i>Expert Systems with Applications</i>, vol 287: 127871, 2025.
+with Heyan Huang, Ping Wu and Haolin Lu.<br />
+In <b>Expert Systems with Applications</b>, vol 287: 127871, 2025.
 </p>
 </div>
 </li>
-
-<li><a id="orgcf1e5e0"></a>Stabilized Distributed Online Mirror Descent for Multi-Agent Optimization<br />
-<div class="outline-text-3" id="text-orgcf1e5e0">
+<li><a id="org5f40128"></a>Stabilized Distributed Online Mirror Descent for Multi-Agent Optimization<br />
+<div class="outline-text-3" id="text-org5f40128">
 <p>
-with Ping Wu, Heyan Huang and Haolin Lu.
-</p>
-
-<p>
-In <i>Knowledge-Based Systems</i>, vol 304: 112582, 2024.
+with Ping Wu, Heyan Huang and Haolin Lu.<br />
+In <b>Knowledge-Based Systems</b>, vol 304: 112582, 2024.
 </p>
 </div>
 </li>
-
-<li><a id="org5ba1c27"></a>Online Sequential Decision-Making with Unknown Delays<br />
-<div class="outline-text-3" id="text-org5ba1c27">
+<li><a id="orgb5f0926"></a>Online Sequential Decision-Making with Unknown Delays<br />
+<div class="outline-text-3" id="text-orgb5f0926">
 <p>
-with Ping Wu and Heyan Huang.
-</p>
-
-<p>
+with Ping Wu and Heyan Huang.<br />
 In <i>Proc. 33rd ACM Web Conference</i> (<b>WWW</b>), pages 4028-4036, 2024.
 </p>
 </div>
 </li>
-<li><a id="orgfc285b2"></a>Improved Truthful Rank Approximation for Rank-Maximal Matchings<br />
-<div class="outline-text-3" id="text-orgfc285b2">
+<li><a id="org0973551"></a>Improved Truthful Rank Approximation for Rank-Maximal Matchings<br />
+<div class="outline-text-3" id="text-org0973551">
 <p>
-with Jinshan Zhang, Xiaotie Deng and Jianwei Yin.
-</p>
-
-<p>
+with Jinshan Zhang, Xiaotie Deng and Jianwei Yin.<br />
 In <i>Proc. 19th International Conference on Web and Internet Economics</i> (<b>WINE</b>), pages 637-653, 2023.
 </p>
 </div>
 </li>
-<li><a id="orgb3723aa"></a>Improved Approximation Ratios of Fixed-Price Mechanisms in Bilateral Trades<br />
-<div class="outline-text-3" id="text-orgb3723aa">
+<li><a id="orgfb0cc00"></a>Improved Approximation Ratios of Fixed-Price Mechanisms in Bilateral Trades<br />
+<div class="outline-text-3" id="text-orgfb0cc00">
 <p>
-with Zeyu Ren and Zihe Wang.
-</p>
-
-<p>
+with Zeyu Ren and Zihe Wang.<br />
 In <i>Proc. 55th ACM Symposium on the Theory of Computing</i> (<b>STOC</b>), pages 751-760, 2023.
 </p>
 </div>
 </li>
-<li><a id="org30e58ed"></a>Optimal Pricing Schemes for Identical Items with Time-Sensitive Buyers<br />
-<div class="outline-text-3" id="text-org30e58ed">
+<li><a id="orge736ae3"></a>Optimal Pricing Schemes for Identical Items with Time-Sensitive Buyers<br />
+<div class="outline-text-3" id="text-orge736ae3">
 <p>
-with Liang Shan and Zihe Wang.
-</p>
-
-<p>
+with Liang Shan and Zihe Wang.<br />
 In <i>Proc. 37th AAAI Conference on Artificial Intelligence</i> (<b>AAAI</b>), pages 5773-5780, 2023.
 </p>
 </div>
 </li>
-<li><a id="orgb0e38f9"></a>Truthful Mechanisms for Steiner Tree Problems<br />
-<div class="outline-text-3" id="text-orgb0e38f9">
+<li><a id="orgb983378"></a>Truthful Mechanisms for Steiner Tree Problems<br />
+<div class="outline-text-3" id="text-orgb983378">
 <p>
-with Jinshan Zhang, Xiaotie Deng and Jianwei Yin.
-</p>
-
-<p>
+with Jinshan Zhang, Xiaotie Deng and Jianwei Yin.<br />
 In <i>Proc. 37th AAAI Conference on Artificial Intelligence</i> (<b>AAAI</b>), pages 5884-5891, 2023.
 </p>
 </div>
 </li>
-<li><a id="orgd67b05c"></a>On the Approximation of Nash Equilibria in Sparse Win-Lose Multi-player Games<br />
-<div class="outline-text-3" id="text-orgd67b05c">
+<li><a id="org5a102e2"></a>On the Approximation of Nash Equilibria in Sparse Win-Lose Multi-player Games<br />
+<div class="outline-text-3" id="text-org5a102e2">
 <p>
-with Jiawei Li and Xiaotie Deng.
-</p>
-
-<p>
+with Jiawei Li and Xiaotie Deng.<br />
 In <i>Proc. 35th AAAI Conference on Artificial Intelligence</i> (<b>AAAI</b>), pages 5557-5565, 2021.
 </p>
 </div>
 </li>
-<li><a id="orgcdd4dbd"></a>ACMo: Angle-Calibrated Moment Methods for Stochastic Optimization<br />
-<div class="outline-text-3" id="text-orgcdd4dbd">
+<li><a id="orgd77c97a"></a>ACMo: Angle-Calibrated Moment Methods for Stochastic Optimization<br />
+<div class="outline-text-3" id="text-orgd77c97a">
 <p>
-with Xunpeng Huang, Runxin Xu, Hao Zhou, Zhe Wang and Lei Li.
-</p>
-
-<p>
+with Xunpeng Huang, Runxin Xu, Hao Zhou, Zhe Wang and Lei Li.<br />
 In <i>Proc. 35th AAAI Conference on Artificial Intelligence</i> (<b>AAAI</b>), pages 7857-7864, 2021.
 </p>
 </div>
 </li>
-<li><a id="orge935710"></a>On the Complexity of Sequential Posted Pricing<br />
-<div class="outline-text-3" id="text-orge935710">
+<li><a id="org5432a3c"></a>On the Complexity of Sequential Posted Pricing<br />
+<div class="outline-text-3" id="text-org5432a3c">
 <p>
-with Tao Xiao and Wenhan Huang.
-</p>
-
-<p>
+with Tao Xiao and Wenhan Huang.<br />
 In <i>Proc. 19th International Conference on Autonomous Agents and Multiagent Systems</i> (<b>AAMAS</b>), pages 1521-1529, 2020.
 </p>
 </div>
 </li>
-<li><a id="orgad8adbf"></a>SPAN: A Stochastic Projected Approximate Newton Method<br />
-<div class="outline-text-3" id="text-orgad8adbf">
+<li><a id="org0e4598f"></a>SPAN: A Stochastic Projected Approximate Newton Method<br />
+<div class="outline-text-3" id="text-org0e4598f">
 <p>
-with Xunpeng Huang, Xianfeng Liang, Yue Yu and Lei Li.
-</p>
-
-<p>
+with Xunpeng Huang, Xianfeng Liang, Yue Yu and Lei Li.<br />
 In <i>Proc. 34th AAAI Conference on Artificial Intelligence</i> (<b>AAAI</b>), pages 1520-1527, 2020.
 </p>
 </div>
 </li>
-<li><a id="orga898553"></a>Distribution-free Junta Testing<br />
-<div class="outline-text-3" id="text-orga898553">
+<li><a id="org5e4fab4"></a>Distribution-free Junta Testing<br />
+<div class="outline-text-3" id="text-org5e4fab4">
 <p>
-with Xi Chen, Rocco A. Servedio, Ying Sheng and Jinyu Xie.
-</p>
-
-<p>
-In <i>Proc. 50th ACM Symposium on the Theory of Computing</i> (<b>STOC</b>), pages 749-759, 2018.
+with Xi Chen, Rocco A. Servedio, Ying Sheng and Jinyu Xie.<br />
+<b>ACM Transactions on Algorithms</b>, 15(1):1:1-1:23, 2019.<br />
+Conference version: In <i>Proc. 50th ACM Symposium on the Theory of Computing</i> (<b>STOC</b>), pages 749-759, 2018.
 </p>
 </div>
 </li>
-<li><a id="org937fd93"></a>On the Approximation of Nash Equilibria in Sparse Win-Lose Games<br />
-<div class="outline-text-3" id="text-org937fd93">
+<li><a id="org79eea58"></a>On the Approximation of Nash Equilibria in Sparse Win-Lose Games<br />
+<div class="outline-text-3" id="text-org79eea58">
 <p>
-with Ying Sheng.
-</p>
-
-<p>
+with Ying Sheng.<br />
 In <i>Proc. 32nd AAAI Conference on Artificial Intelligence</i> (<b>AAAI</b>), pages 1154-1160, 2018.
 </p>
 </div>
 </li>
-<li><a id="orgc077d65"></a>Assignment and Pricing in Roommate Market<br />
-<div class="outline-text-3" id="text-orgc077d65">
+<li><a id="orga3cd30c"></a>Assignment and Pricing in Roommate Market<br />
+<div class="outline-text-3" id="text-orga3cd30c">
 <p>
-with Pak Hay Chan, Xin Huang, Chihao Zhang and Shengyu Zhang.
-</p>
-
-<p>
+with Pak Hay Chan, Xin Huang, Chihao Zhang and Shengyu Zhang.<br />
 In <i>Proc. 30th AAAI Conference on Artificial Intelligence</i> (<b>AAAI</b>), pages 446-452, 2016.
 </p>
 </div>
 </li>
-<li><a id="org85ce622"></a>Understanding PPA-completeness<br />
-<div class="outline-text-3" id="text-org85ce622">
+<li><a id="orgaa8b48c"></a>Understanding PPA-completeness<br />
+<div class="outline-text-3" id="text-orgaa8b48c">
 <p>
-with Xiaotie Deng, Jack R. Edmonds, Zhe Feng, Qi Qi and Zeying Xu.
-</p>
-
-<p>
-In <i>Proc. 31st Conference on Computational Complexity</i> (<b>CCC</b>), pages 23:1-23:25, 2016.
+with Xiaotie Deng, Jack R. Edmonds, Zhe Feng, Qi Qi and Zeying Xu.<br />
+Journal of Computer and System Sciences (<b>JCSS</b>), vol 115: 146-168 (2021).<br />
+Conference version: In <i>Proc. 31st Conference on Computational Complexity</i> (<b>CCC</b>), pages 23:1-23:25, 2016.
 </p>
 </div>
 </li>
 </ul>
 </div>
-
-<div id="outline-container-org41cdb4d" class="outline-2">
-<h2 id="org41cdb4d">Working Papers</h2>
-<div class="outline-text-2" id="text-org41cdb4d">
+<div id="outline-container-orgc674387" class="outline-2">
+<h2 id="orgc674387">Working Papers</h2>
+<div class="outline-text-2" id="text-orgc674387">
 </div>
 <ul class="org-ul">
-<li><a id="orgba22317"></a>Computational Perspectives on Optimal Environmental Policies<br />
-<div class="outline-text-3" id="text-orgba22317">
+<li><a id="orgc4d2057"></a>Computational Perspectives on Optimal Environmental Policies<br />
+<div class="outline-text-3" id="text-orgc4d2057">
 <p>
 with Liang Shan, Haoqiang Huang and Zihe Wang.
 </p>
 </div>
 </li>
-<li><a id="org8cab651"></a>LLMs Judge Themselves: A Game-Theoretic Framework for Human-Aligned Evaluation<br />
-<div class="outline-text-3" id="text-org8cab651">
+<li><a id="org9519ef5"></a>LLMs Judge Themselves: A Game-Theoretic Framework for Human-Aligned Evaluation<br />
+<div class="outline-text-3" id="text-org9519ef5">
 <p>
 with Yang Gao, Yuhang Liu, Siyu Miao and Xinyue Liang.
 </p>
 </div>
 </li>
-<li><a id="org195b060"></a>Seasonal Linear Contextual Bandits<br />
-<div class="outline-text-3" id="text-org195b060">
+<li><a id="orgbcd9a11"></a>Seasonal Linear Contextual Bandits<br />
+<div class="outline-text-3" id="text-orgbcd9a11">
 <p>
 with Rui Dai, Youchao Zhou and Yuan Zhou.
 </p>
@@ -515,36 +273,26 @@ with Rui Dai, Youchao Zhou and Yuan Zhou.
 </li>
 </ul>
 </div>
-
-<div id="outline-container-org1e7d7f0" class="outline-2">
-<h2 id="org1e7d7f0">Teaching</h2>
-<div class="outline-text-2" id="text-org1e7d7f0">
+<div id="outline-container-orgd6499a3" class="outline-2">
+<h2 id="orgd6499a3">Teaching</h2>
+<div class="outline-text-2" id="text-orgd6499a3">
 </div>
 <ul class="org-ul">
-<li><a id="org3fe99ef"></a>Matrix Analysis: S26<br /></li>
-<li><a id="orgbbc0af7"></a>Algorithmic Game Theory: S26, S25, S24, S23, F22, S22, F21<br /></li>
-<li><a id="org3927a16"></a>Combinatorics: S24, S23<br /></li>
-<li><a id="orga8bca5d"></a>Mathematical Foundations of AI: S23<br /></li>
-<li><a id="org8207f4e"></a>Programming in C++: F23<br /></li>
+<li><a id="org226f20d"></a>Matrix Analysis: S26<br /></li>
+<li><a id="org5522969"></a>Algorithmic Game Theory: S26, S25, S24, S23, F22, S22, F21<br /></li>
+<li><a id="org3f8fdd4"></a>Combinatorics: S24, S23<br /></li>
+<li><a id="orga240d23"></a>Mathematical Foundations of AI: S23<br /></li>
+<li><a id="orgbcac04b"></a>Programming in C++: F23<br /></li>
 </ul>
 </div>
-<div id="outline-container-org50acc76" class="outline-2">
-<h2 id="org50acc76">Useful Links</h2>
-<div class="outline-text-2" id="text-org50acc76">
+<div id="outline-container-org40b3224" class="outline-2">
+<h2 id="org40b3224">Useful Links</h2>
+<div class="outline-text-2" id="text-org40b3224">
 <ul class="org-ul">
 <li><a href="https://jmlr.csail.mit.edu/reviewing-papers/knuth_mathematical_writing.pdf">Mathematical Writing</a></li>
 <li><a href="https://theory.report/">Theory of Computing Report</a></li>
 <li><a href="https://orgmode.org/">Org Mode</a></li>
 </ul>
-</div>
-</div>
-<div id="outline-container-orgb5ef08f" class="outline-2">
-<h2 id="orgb5ef08f">Contact</h2>
-<div class="outline-text-2" id="text-orgb5ef08f">
-<dl class="org-dl">
-<dt>Email</dt><dd>firstname AT bit DOT edu DOT cn</dd>
-<dt>Office</dt><dd>Room 1034, Central Building, Zhongguancun Campus</dd>
-</dl>
 </div>
 </div>
 </div>
